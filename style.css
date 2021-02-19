@@ -1,4 +1,37 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+    background-color:black;
+}
+h1{
+    color:white;
+    font-family: Arial, serif;
 
+}
+h1{
+    color: gray;
+    font-family: Verdana, serif;
+    font-size: 25px;
+
+}
+.main-div{
+    background-color: white;
+    color: black;
+    width: 400px;
+    padding: 20px;
+    border-radius:25px;
+    margin: 0 auto;
+
+
+
+
+}
+.main-div footer{
+    text-align: left;
+    padding-top:10px;
+}
+.content{
+}
+
+.content{
+    padding-left: 50px ;
+}
 

@@ -1,16 +1,51 @@
-<html>
-    <head>
-    <script src="script.js"></script>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="script.js"> </script>
     <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Simple Interest Calculator</h1>
+    <title>Simple Interest Calculator</title>
+</head>
+<body>
+<div class = "main-div">
+    <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+<div class="content">
+    Amount <input type="number"  id="principal">
+    <br/>
+    Interest Rate <input type="range" min="1" max="20"  step="0.25" value="10.25"   id="rate" onchange="updateTextInput()">
+    <span id="sliderRate">10.25%</span>
 
-        <button onclick="compute()">Compute</button>
-    </body>
+    <br/>
+
+    No. of Years <select id = "myList">
+    <option >1</option>
+    <option >2</option>
+    <option >3</option>
+    <option >4</option>
+    <option >5</option>
+    <option >6</option>
+    <option >7</option>
+    <option>8</option>
+    <option >9</option>
+    <option >10</option>
+
+</select>
+    <br/>
+
+
+    <button onclick="compute()">Compute Interest</button>
+    <br/>
+    <br/>
+    <span id="result"></span>
+
+
+</div>
+    <footer>
+        &#169; Everyone Can Get Rich
+    </footer>
+</div>
+
+</body>
 </html>
